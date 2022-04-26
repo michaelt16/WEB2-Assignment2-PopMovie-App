@@ -1,0 +1,252 @@
+*{
+     /* margin:0px; */
+    /* box-sizing: border-box; */
+    /* padding: 0px;  */
+  }
+  
+    
+.container{
+    display: grid;
+    grid-template-columns: 0.5fr 1.2fr 0.5fr;
+    grid-template-rows: 0.5fr 2.5fr 0.5fr;
+    height: 100vh;
+    
+   
+}
+body, input, textarea, select, button {
+    color: #202124;
+    font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+}
+
+.inner-container{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    border: 2px solid #e1e3e6;
+    border-radius: 10px;
+    display:grid;
+    grid-template-columns: 2fr 1.5fr;
+    background-color: white;
+    z-index: 2;
+}
+
+.leftside{
+    padding-top: 45px;
+    padding-left: 35px;
+   
+
+}
+.email-caption{
+    transform: translateY(4px) translateX(5px) ;
+    /* transform: translateX(5px) ; */
+}
+.logo{
+    grid-row:1/2;
+    grid-column: 1/-1;
+}
+
+form{
+    
+    display:grid;
+    grid-template-columns: 0.75fr 1fr;
+    grid-template-rows: 0.5fr 0.55fr 0.55fr 0.55fr 0.55fr 0.55fr 1fr 1fr;
+}
+
+.form{
+    padding:5px;
+    margin-top: 10px;
+    grid-gap:10px;
+    
+}
+form >h1{
+    font-size: 25px;
+    grid-column: 1/-1;
+    grid-row:2/3;
+    color: #202124;
+    
+    
+    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.3333;
+    
+}
+.password-small{
+    grid-column: 1/-1;
+    transform: translateY(-5px) translateX(5px) ;
+    padding-right: 10px;
+}
+
+.first-name{
+    grid-column: 1/2;
+}
+.last-name{
+    grid-column: 2/3;
+}
+
+.email{
+    grid-column: 1/-1;
+    /* margin-bottom: -10px ; */
+}
+
+.email input[type=text]{
+    width: 367px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #e1e3e6;
+    padding-left:10px;
+    padding-top:5px;
+    border-radius: 6px;
+    
+}
+#username{
+    margin-bottom: 10px;
+}
+
+#username, #password, #confirm-password , #country, #city{
+    height: 30px;
+    border: 2px solid #e1e3e6;
+    padding-left:10px;
+    padding-top:5px;
+    border-radius: 6px;
+}
+
+input[type=submit] {
+    background-color: #1a73e8;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+.signup{
+    grid-column: 2/3;
+    grid-row: 8/9;
+    margin-top: 0px;
+    margin-left: 70px;
+    
+    
+    
+
+}
+
+
+
+/* rightside */
+.rightside img{
+    margin-top: 130px;
+    margin-left: 60px;
+}
+
+figcaption{
+    margin-left: 19px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+/* 
+asda
+
+/* *Waves** code reference https://codepen.io/goodkatz/pen/LYPGxQz */
+
+
+
+
+
+
+
+.header {
+position:relative;
+
+background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+/* color:white; */
+}
+
+.inner-header {
+height:65vh;
+width:100%;
+margin: 0;
+padding: 0;
+}
+
+
+.waves {
+
+position:relative;
+width: 100%;
+height:100vh;
+margin-bottom:-7px; /*Fix for safari gap*/
+min-height:100px;
+max-height:150px;
+transform: translateY(-400px);
+}
+
+
+.content {
+position:relative;
+height:20vh;
+text-align:center;
+background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+animation-delay: -2s;
+animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+animation-delay: -3s;
+animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+animation-delay: -4s;
+animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+animation-delay: -5s;
+animation-duration: 20s;
+}
+@keyframes move-forever {
+0% {
+ transform: translate3d(-90px,0,0);
+}
+100% { 
+  transform: translate3d(85px,0,0);
+}
+}  
+
+@media screen and (max-width: 425px) {
+    .header{
+        background: white;
+    }
+    .container{
+        padding-right: 2px;
+    }
+    .inner-container{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        /* border: 2px solid #e1e3e6; */
+        border-radius: 10px;
+        display:grid;
+        grid-template-columns: 10fr;
+        background-color: white;
+        z-index: 2;
+        padding-right: 30px;
+    }
+    .logo{
+        grid-row:1/2;
+        grid-column: 1/-1;
+       
+    }
+    .rightside {
+        display:none;
+    }
+    
+}

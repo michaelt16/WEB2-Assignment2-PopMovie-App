@@ -1,0 +1,542 @@
+*{
+  margin:0px;
+  /* box-sizing: border-box; */
+  padding: 0px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 0.5fr 2.5fr 0.5fr;
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+    height: 100vh;
+    font-family: Versatile-Bold;
+    
+    /* background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%); */
+    /* background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%); */
+}
+/* 
+header */
+
+
+/* a{
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  
+  }
+  
+  a:link {
+  color: white;
+  }
+  
+  a:visited {
+  color: white;
+  } */
+  
+  .header-area{
+    
+    grid-column: 1/-1;
+  }
+  
+  /* .header-area{
+      display: flex;
+      
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      background-color: #1f2833;
+      text-align: center;
+      grid-column: 1/-1;
+      
+  } */
+  
+  
+  
+  .icon{
+    grid-column: 1/2;
+    margin: 20px;
+    margin-left: 40px;
+    margin-top: 30px;
+  }
+  img:hover{
+    cursor: pointer;
+  }
+  
+  /* .login{
+    grid-column: 3/4;
+    margin-top: 45px;
+    padding-top: 4px;
+    padding-left: 25px;
+    border: 2px solid black;
+    border-radius: 30px;
+    height: 30px;
+    width: 100px;
+    background-color: #FBEEC1;
+  
+  } */
+  
+  /* .login {background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%)} */
+  .about-us{
+  grid-column: 3/4;
+  width: 200px;
+  height: 10px;
+  margin-top: 35px;
+  padding-top: 4px;
+  
+  padding: 25px ;
+  
+  color: white;   
+  font-family: sans-serif;  
+  
+  
+  border-right: 1px solid white;
+  
+  }
+  .login {
+   grid-column: 4/5;
+   width: 150px;
+   height: 40px;
+   margin-top: 45px;
+  
+   padding-top: 4px;
+   padding-left: 55px;
+   padding: 15px 45px;
+   /* text-align: center; */
+   /* text-transform: capitalize; */
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;   
+   font-family: sans-serif;         
+   /* box-shadow: 0 0 20px #eee; */
+   /* border-radius: 10px; */
+   display: block;
+  
+  }
+  
+  .login:hover{
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+   cursor: pointer;
+  }
+  
+  /* .signup{
+    grid-column: 4/5;
+    margin-top: 44px;
+    padding-top: 4px;
+    padding-left: 20px;
+    border: 2px solid black;
+    border-radius: 30px;
+    height: 30px;
+    width: 100px;
+    background-color: #FBEEC1;
+  } */
+  
+  /* .signup {background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%)} */
+  
+  .signup {
+  grid-column: 5/6;
+   width: 150px;
+   height: 40px;
+   margin-top: 45px;
+   padding-top: 4px;
+   padding-left: 25px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: capitalize;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;     
+   font-family: sans-serif;           
+   /* box-shadow: 0 0 20px #eee; */
+   border-radius: 10px;
+   display: block;
+  }
+  
+  .signup:hover{
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+   cursor: pointer;
+  }
+  
+  
+  
+  
+
+.registerTab{
+    grid-column: 2/3 ;
+    grid-row: 2/3;
+    padding-top:30px;
+    
+    border-radius: 30px;
+    display:grid;
+    grid-template-columns: 1.5fr 3fr;
+}
+/* leftside */
+.leftside{
+
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-rows: 0.5fr 2fr 1fr 1fr 2fr;
+    
+  
+
+}
+
+.welcome-text{
+
+    grid-row: 3/4;
+    /* padding-left: 20px; */
+    font-size: 30px;
+    /* padding-left: 150px; */
+}
+
+.sign-in{
+    grid-row: 4/5;
+    height: 10px;
+    width: 110px;
+    /* padding:20px; */
+    padding-left: 30px;
+    padding-right: 3px;
+    padding-bottom: 35px;
+    padding-top: 15px;
+    margin-left: 50px;
+    border-radius: 30px;
+    /* padding-left:150px; */
+    border: 2px solid black;
+}
+
+/* rightside */
+
+.rightside{
+
+    display:grid;
+    grid-template-rows: 0.5fr  0.5fr;
+    padding-left:100px;
+    -webkit-appearance: none;
+    border:2px solid black;
+    border-left: none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+}
+
+.create-account-text{
+    font-size: 60px;
+    padding-top:180px;
+  
+}
+
+.enter-email{
+    grid-row: 3/4;
+    margin-left:100px;
+    border-radius: 30px;
+}
+.enter-password{
+    margin-left:100px;
+    grid-row: 4/5;
+    border-radius: 30px;
+}
+input[type=text] {
+    padding: 10px;
+    width: 300px;
+  }
+
+  input[type=email] {
+    padding: 10px;
+    width: 300px;
+  }
+  input[type=password] {
+    padding: 10px;
+    width: 300px;
+  }
+  
+
+.sign-up{
+    grid-row:5/6;
+    border-radius: 30px;
+    height: 10px;
+    width: 110px;
+    padding-left: 30px;
+    padding-right: 35px;
+    padding-bottom: 35px;
+    padding-top: 15px;
+    border: 2px solid black;
+    margin-left:190px;
+    margin-top:30px;
+}
+
+
+/*Reset css */
+
+
+
+/*burger menu reference for code https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci*/
+/* 
+.header-area{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #1f2833;
+  text-align: center;
+  grid-column: -1/1;
+
+}
+
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(0,172,193,1);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link{
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: white;
+}
+
+.nav-link:hover{
+  color: #482ff7;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 425px) {
+
+  /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+} */
+
+
+
+
+  /* .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 9rem;
+      flex-direction: column;
+      background: #1f2833;
+      color: white;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+
+  .nav-menu.active {
+      left: 0;
+  }
+
+  .nav-item {
+      margin: 2.5rem 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }  */
+  .create-account-text{
+    font-size: 20px;
+    padding-top:210px;
+  
+  }
+  .leftside{
+  
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+      padding-left: 15px;
+      display: grid;
+      grid-template-rows: 0.5fr 2fr 1fr 1fr 2fr;
+      
+  
+  }
+  .enter-email{
+    grid-row: 3/4;
+    margin-left:10px;
+    border-radius: 30px;
+}
+.enter-password{
+    margin-left:10px;
+    grid-row: 4/5;
+    border-radius: 30px;
+}
+  .welcome-text{
+
+    grid-row: 3/4;
+    /* padding-left: 20px; */
+    font-size: 20px;
+    padding-left: 30px;
+    /* padding-left: 150px; */
+}
+
+
+input[type=email] {
+  padding: 10px;
+  width: 200px;
+}
+input[type=password] {
+  padding: 10px;
+  width: 200px;
+}
+.sign-in{
+  grid-row: 4/5;
+  height: 10px;
+  width: 110px;
+  /* padding:20px; */
+  padding-left: 30px;
+  padding-right: 3px;
+  padding-bottom: 35px;
+  padding-top: 15px;
+  margin-right: 80px;
+  
+  border-radius: 30px;
+  /* padding-left:150px; */
+  border: 2px solid black;
+}
+.sign-up{
+  grid-row:5/6;
+  border-radius: 30px;
+  height: 10px;
+  width: 110px;
+  padding-left: 30px;
+  padding-right: 35px;
+  padding-bottom: 35px;
+  padding-top: 15px;
+  border: 2px solid black;
+ margin-left: 40px;
+  margin-top:30px;
+}
+
+.rightside{
+
+  display:grid;
+  grid-template-rows: 0.5fr 0.10fr 0.10fr 0.10fr 0.5fr;
+  padding-left:20px;
+  padding-right:20px;
+  -webkit-appearance: none;
+  border:2px solid black;
+  border-left: none;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  
+}
+
+}
+
+@media screen and (width: 1440px) {
+  .leftside{
+
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+      padding-left: 40px;
+      display: grid;
+      grid-template-rows: 0.5fr 2fr 1fr 1fr 2fr;
+      
+  
+  }
+  .create-account-text{
+    font-size: 50px;
+    padding-top:180px;
+  
+}
+
+.rightside{
+
+  display:grid;
+  grid-template-rows: 0.5fr 0.5fr;
+  padding-left:20px;
+  padding-right:20px;
+  -webkit-appearance: none;
+  border:2px solid black;
+  border-left: none;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  
+}
+.enter-email{
+  grid-row: 3/4;
+  margin-left:100px;
+  border-radius: 30px;
+}
+.enter-password{
+  margin-left:100px;
+  grid-row: 4/5;
+  border-radius: 30px;
+}
+
+}
