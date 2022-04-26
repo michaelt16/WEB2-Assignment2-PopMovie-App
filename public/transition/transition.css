@@ -1,0 +1,157 @@
+.logo-pos{
+   padding-top: 180px;
+   padding-bottom: 240px;
+    
+    
+}
+
+body {
+    
+  }
+  @keyframes loader {
+    0% {
+      width: 0;
+    }
+    20% {
+      width: 10%;
+    }
+    25% {
+      width: 24%;
+    }
+    43% {
+      width: 41%;
+    }
+    56% {
+      width: 50%;
+    }
+    66% {
+      width: 52%;
+    }
+    71% {
+      width: 60%;
+    }
+    75% {
+      width: 76%;
+    }
+    94% {
+      width: 86%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  .progress-bar {
+     margin-top: 180px;
+    border-radius: 60px;
+    overflow: hidden;
+    width: 100%;
+  }
+  .progress-bar span {
+    display: block;
+  }
+  .bar {
+    background: rgba(0, 0, 0, 0.075);
+  }
+  .progress {
+    animation: loader 3s ease infinite;
+    background: #75b800;
+    color: #fff;
+    padding: 5px;
+    width: 0;
+  }
+  .progress-bar {
+    left: 50%;
+    max-width: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  
+
+
+/* 
+.loader {
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #3498db; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-top: 100px;
+    margin-left: 70vh;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  } */
+/* RETRIEVED FROM https://codepen.io/alberta/pen/qZbpgv */
+/* 
+@keyframes loadinganim {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  #wrapper {
+     transform: translateY(-100px); 
+ 
+    min-height: 300px;
+    color: white;
+    text-align: center;
+    display: table;
+    width: 100%;
+  }
+  #wrapper #loading {
+    display: table-cell;
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    vertical-align: middle;
+    font-family: helvetica, sans-serif;
+  }
+  #wrapper #loading .bulletouter {
+    animation: loadinganim 1s infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+    width: 50px;
+    height: 50px;
+    background: rgba(0,172,193,1);
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  #wrapper #loading .bulletouter .bulletinner {
+    position: relative;
+    left: -5px;
+    width: 45px;
+    height: 45px;
+    background:  white;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  #wrapper #loading .bulletouter .mask {
+    position: relative;
+    left: -5px;
+    top: -15px;
+    width: 50px;
+    height: 25px;
+    background:  white;
+    transform: rotate(45deg);
+  }
+  #wrapper #loading .bulletouter .dot {
+    position: relative;
+    left: 33px;
+    top: -32px;
+    width: 8px;
+    height: 8px;
+    background: rgba(0,172,193,1);
+    border-radius: 50%;
+  }
+  #wrapper #loading p {
+    padding-top: 23px;
+  }
+   */

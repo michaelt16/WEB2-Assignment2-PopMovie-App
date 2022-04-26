@@ -1,0 +1,509 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+*{
+  margin:0px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+
+
+body{
+    font-family: 'Lato', 'sans-serif';
+    width:100vw;
+    margin-top:0px;
+    margin-left:0px;
+   
+}
+
+h1 {
+    letter-spacing: 1px;
+}  
+
+p {
+  font-size:21px;
+  line-height:27px;
+}
+
+.bodyContainer{
+    display:grid;
+    grid-template-rows:auto auto;
+    height:100vh;
+    padding-bottom:50px;
+}
+
+.parallax {
+  width:50px;
+}
+
+
+
+.header-area{ 
+  /* border:2px solid black; */
+  display: flex;
+  justify-content: space-between;
+  
+  padding: 1rem 1.5rem; 
+  background-color: #1f2833;
+  text-align: center;
+  
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  
+}
+
+.icon{
+  grid-column: 1/2;
+  margin: 20px;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+img:hover{
+  cursor: pointer;
+}
+
+.about-us{
+  grid-column: 3/4;
+  width: 200px;
+  height: 10px;
+  margin-top: 35px;
+  padding-top: 4px;
+  padding: 25px;
+  color: white;   
+  border-right: 1px solid white;
+  
+}
+.login {
+   grid-column: 4/5;
+   width: 150px;
+   height: 40px;
+   margin-top: 45px;
+  
+   padding-top: 4px;
+   padding-left: 55px;
+   padding: 15px 45px;
+   /* text-align: center; */
+   /* text-transform: capitalize; */
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;        
+   /* box-shadow: 0 0 20px #eee; */
+   /* border-radius: 10px; */
+   display: block;
+  
+ }
+
+ .login:hover{
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+   cursor: pointer;
+ }
+
+/* .signup{
+    grid-column: 4/5;
+    margin-top: 44px;
+    padding-top: 4px;
+    padding-left: 20px;
+    border: 2px solid black;
+    border-radius: 30px;
+    height: 30px;
+    width: 100px;
+    background-color: #FBEEC1;
+} */
+
+/* .signup {background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%)} */
+
+.signup {
+  grid-column: 5/6;
+   width: 150px;
+   height: 40px;
+   margin-top: 45px;
+   padding-top: 4px;
+   padding-left: 25px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: capitalize;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;           
+   /* box-shadow: 0 0 20px #eee; */
+   border-radius: 10px;
+   display: block;
+ }
+
+ .signup:hover{
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+   cursor: pointer;
+ }
+
+
+.upperPart {
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  margin-bottom:50px;
+}
+
+
+.aboutus {
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  color:white;
+  padding-top: 200px;
+  padding-bottom:300px;
+}
+
+.waves{
+  transform:translateY(-155px);
+  margin-bottom:-200px;
+}
+
+.whatIsSite{
+  
+  display:flex;
+  border:none;
+  align-items:center;
+  justify-content: space-around;
+}
+
+.whatIsSite > img {
+  width:700px;
+  height:500px;
+}
+
+
+.aboutSiteText{
+  flex: 0 0 550px;
+  margin-bottom:50px;
+  margin-right:50px;
+}
+
+.whoAreWe {
+  margin-top:50px;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.teamText{
+  flex: 0 0 35%;
+  margin-left:50px;
+}
+
+.academic {
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.titles {
+    font-weight:lighter;
+    background-color:#003352;
+    -webkit-box-shadow: 13px -13px 0px 2px #007FB5; 
+    box-shadow: 13px -13px 0px 2px #007FB5;
+    color:white;
+    padding-left:50px;
+    padding-bottom:10px;
+}
+
+.titles > h1, .titles > h2 {
+    font-weight:lighter;
+    letter-spacing: 5px;
+    transform:translate(-35px);
+}
+
+.contributors {
+    margin-top:50px;
+    grid-column:1/2;
+}
+
+.h1Contributors{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top:70px;
+}
+
+
+.michaelT, .nateP, .afilV, .noahB{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.nateText, .noahText {
+    margin-top:30px;
+    background-color:#003352;
+    -webkit-box-shadow: 2px 0px -13px 13px #007FB5; 
+    box-shadow: -13px -13px 0px 0px #007FB5;
+    color:white;
+    padding: 10px 10px 10px 10px;
+}
+
+.nateImg, .noahImg {
+  float:right;
+  transform:translate(-80px);
+}
+
+.michaelImg, .afilImg {
+  float:left;
+  transform:translate(80px);
+}
+
+.michaelText, .afilText {
+    margin-top:30px;
+    background-color:#003352;
+    -webkit-box-shadow: 13px -13px 0px 2px #007FB5; 
+    box-shadow: 13px -13px 0px 2px #007FB5;
+    color:white;
+    padding: 10px 10px 10px 10px;
+    
+}
+
+/* .michaelT > img {
+    margin-left:70px;
+} */
+
+.memberInfo {
+    flex: 0 0 35%;
+    margin-bottom:25px;
+}
+
+
+.siteLogo {
+    height:300px;
+    width:350px;
+}
+
+.langMarkdown {
+  text-align: center;
+}
+
+.langMarkdown > img{
+  height:300px;
+  width:800px;
+}
+
+.timeStuff {
+  text-align:center;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+/* @media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+  
+} */
+
+
+@media (max-width: 650px){
+  
+  .inner-header {
+    height:70vh;
+    width:100%;
+    margin: 0;
+    padding: 0;
+  }
+
+ .header {
+    /* position:relative;
+    text-align:center; */
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    width: fit-content;
+    /* color:white; */
+  }
+  .waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    min-height:100px;
+    max-height:150px;
+  }
+  .header-area{
+    /* border:2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: #1f2833;
+    text-align: center;
+    
+  }
+  .whatIsSite{
+  
+    display:flex;
+    border:none;
+    align-items:center;
+    justify-content: space-around;
+  }
+  
+  .whatIsSite > img {
+    width:300px;
+    height:200px;
+  }
+  
+  .whoAreWe > img {
+    width:300px;
+    height:200px;
+  }
+  
+  
+  
+  
+
+
+}
+
+@media (width:1440px){
+  .header-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: #1f2833;
+    text-align: center;
+    
+  }
+
+  
+  
+}
+
+
+
+
+@media only screen and (max-width:425px) {
+  h1 {
+    font-size:50px;
+  }
+  
+  h2 {
+    font-size:35px;
+  }
+
+  p {
+    font-size:35px;
+    line-height:55px;
+  }
+
+
+  .aboutus {
+    padding-bottom:160px;
+  }
+
+  .waves{
+    margin-top:70px;
+  }
+
+  .whatIsSite {
+    flex-direction:column;
+    transform:translateY(-60px);
+  }
+
+  .whatIsSite > img {
+    width:100%;
+    height:100%;
+  }
+
+
+  .aboutSiteText {
+    flex: 0 0 50px;
+    text-align: center;
+    margin-left:35px;
+  }
+
+  .aboutGit {
+    width:50px;
+    height:50px;
+  }
+
+  .whoAreWe {
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-right:55px;
+  }
+
+  .whoAreWe > img{
+    width:100%;
+    height:100%;
+    
+  }
+
+  .michaelImg, .afilImg{
+    transform:translate(-25px);
+  }
+
+  .nateImg, .noahImg{
+    transform:translate(25px);
+  }
+
+  .michaelT, .nateP, .afilV, .noahB{
+    padding-bottom:70px;
+  }
+
+  .memberInfo {
+    flex: 0 0 45%;
+    margin-bottom:25px;
+}
+
+  h3{
+    font-size:30px;
+  }
+
+  .nav-item > a {
+    font-size:30px;
+  }
+
+  .nav-menu {
+    z-index:3;
+  }
+
+}

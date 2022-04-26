@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+@font-face {
+    font-family: 'FF';
+    src: url("../fonts/DIN.ttf");
+}
+
+*{
+  margin:0px;
+  box-sizing: border-box;
+  padding: 0px;
+}
+
+
+body{
+    font-family: 'FF', 'sans-serif';
+    margin-top:0px;
+    margin-left:0px;
+    color:rgba(255, 255, 255, 0.87);
+    font-weight:lighter;
+}
+
+.bodyContainer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/MadMax2BG.jpg);
+    background-size:cover;
+    height:100vh;
+    display:flex;
+}
+
+.mainViewContainer {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.movieTitle {
+    letter-spacing: 1px;
+    margin-bottom:10px;
+    font-size:40px;
+}
+
+.movieContainer{
+    flex: 0 0 40%;
+    display:flex;
+    flex-direction: column;
+    row-gap:10px;
+    font-size:18px;
+}
+
+
+.yearGenreRating {
+    display:flex;
+    flex-direction: row;
+    column-gap:20px;
+}
+
+.yearGenreRating > * {
+    margin-bottom:10px;
+}
+
+.playLogo{
+    width:150px;
+    height:150px;
+}
+
+.playMovie {
+    margin-right:150px;
+}
+
+.playMovie > h3 {
+    text-align: center;
+    margin-top:10px;
+}
+
+.movieOverview {
+    margin-bottom:15px;
+}
+
+.movieFavourite {
+    display:flex;
+    flex-direction: wrap;
+    column-gap:25px;
+}
+
+#heart {
+    margin-top:3px;
+}
+
+.showMore{
+    margin-top:20px;
+}
+
+.showMoreButton, .castButton, .crewButton {
+    font-family: 'FF';
+    font-size:19px;
+    background:none;
+    color:rgba(255, 255, 255, 0.87);
+    border: 3px solid rgba(255, 255, 255, 0.87);
+    padding: 10px 23px;
+}
+
+.hidden{
+    display:none;
+}
+
+.arrowMark {
+    display:flex;
+    flex-direction: row;
+}
+
+.goBack {
+    margin-top:10px;
+    margin-left:10px;
+}
+.arrowmark{
+    width:50px;
+    height:50px;
+}
+
+.moreInfoContainer{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.movieExtraDetails {
+    display:flex;
+    flex-direction:column;
+    row-gap:25px;
+    flex: 0 0 50%;
+    font-size:20px;
+}
+
+.castCrewButtons {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 25px;
+    margin-left:10px;
+}
+
+.castCrewCol {
+    display:flex;
+    flex-direction: column;
+    row-gap:30px;
+    overflow-y: scroll;
+    flex: 0 0 35%;
+    font-size:18px;
+}
+.castCrewHeader{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.characterNameHeader{
+    display:Flex;
+    flex-direction: row;
+}
+.deptJobNameHeader, .crewMember{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.castName{
+    transform: translateX(20px);
+}
+
+.crewMember {
+    text-align: center;
+}
+
+
+.characterNameHeader{
+    margin-bottom:30px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.castList, .crewList {
+    display:flex;
+    flex-direction: column;
+    row-gap:20px;
+    overflow-y: scroll;
+    height:50vh;
+}
+
+.castMember{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+
+/*HamBurger menu*/
+
+
+/* padding: 0;
+box-sizing: border-box; */
+
+
+/* 
+.header-area{
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #1f2833;
+  text-align: center;
+  
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu li {
+  list-style: none;
+}
+
+.nav-menu a{
+  text-decoration: none;
+}
+
+.nav-item {
+  margin-left: 5rem;
+}
+
+.nav-link{
+  font-size: 1.2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+
+.nav-link:hover{
+  color: #482ff7;
+} */
+/* 
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 6rem;
+      flex-direction: column;
+      background: #1f2833;
+      color: white;
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+      box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05);
+      z-index: 2;
+  }
+
+  .nav-menu.active {
+      left: 0;
+  }
+  .nav-menu li {
+    list-style: none;
+  }
+  
+  .nav-menu a{
+    text-decoration: none;
+  }
+
+  .nav-item {
+      margin: 2.5rem 0;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+}
+
+
+ */
+
+
+
+
+
+@media screen and (max-width:435px){
+    
+    
+    .bodyContainer {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/madMax2Mobile.jpg);
+        background-size:cover;
+        background-position:center;
+        height:100vh;
+        display:flex;
+        overflow-y: scroll;
+    }
+    
+    .mainViewContainer {
+        align-items: center;
+        flex-direction: column-reverse;
+        
+    }
+
+    .playLogo{
+        width:100px;
+        height:100px;
+    }
+    
+    .playMovie {
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top:150px;
+        margin-right:0px;
+    }
+    
+    .playMovie > h3 {
+        text-align: center;
+        margin-top:20px;
+    }
+
+    .movieTitle {
+        margin-top:20px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        font-size:20px;
+        text-align: center;
+    }
+    
+    
+    .movieOverview {
+        margin-bottom:15px;
+    }
+    /* .movieTitle {
+        letter-spacing: 1px;
+        margin-bottom:10px;
+        padding: 40px;
+        font-size:20px;
+    } */
+    
+    .yearGenreRating {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        column-gap:18px;
+        margin-left:10px;
+    }
+
+    .movieGenre{
+        flex: 0 0 40%;
+    }
+
+    .movieOverview {
+        margin:15px;
+        text-align: center;
+    }
+    
+    .movieFavourite {
+        display:flex;
+        flex-direction: wrap;
+        column-gap:15px;
+        margin:20px;
+        justify-content: center;
+    }
+    
+    #heart {
+        margin-top:3px;
+        margin-left: 10px ;
+    }
+    
+    .showMore{
+        display:flex;
+        justify-content: center;
+        margin-bottom:25px;
+    }
+    
+    .showMoreButton {
+        font-family: 'FF';
+        font-size:19px;
+        background:none;
+        color:rgba(255, 255, 255, 0.87);
+        border: 3px solid rgba(255, 255, 255, 0.87);
+        padding: 10px 23px;
+    }
+
+    .moreInfoContainer{
+        flex-direction:column;
+        overflow-y: scroll;
+        
+    }
+
+    .movieExtraDetails{
+        margin-top:270px;
+        width:90%;
+        font-size:18px;
+        margin-left:10px;
+    }
+
+    .castCrewCol {
+        margin-top:50px;
+        margin-bottom:25px;
+        width:100%;
+    }
+
+    .characterNameHeader > h2, .deptJobNameHeader > h2{
+        font-size: 23px;
+    }
+
+    .deptJobNameHeader{
+        margin-left:20px;
+        font-size:20px;
+    }
+
+    .castMember > h3, .crewMember > h3 {
+        font-size:18px;
+        font-weight:lighter;
+    }
+
+    .crewCol {
+        width:95%;
+        margin-left:10px;
+    }
+    
+    h3.character{
+        transform: translateX(5px);
+    }
+
+    h3.department {
+        transform:translateX(15px);
+    }
+
+    h3.job {
+        transform:translateX(10px);
+    }
+
+  
+    
+    
+}

@@ -1,0 +1,7 @@
+.fa-heart{
+    display: block;
+    color:red;
+    position:absolute;
+    padding:10px;
+    transform:translateX(-35px);
+   }
