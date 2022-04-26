@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+@font-face {
+    font-family: 'FF';
+    src: url("public/details/fonts/DIN.ttf");
+}
+
+body {
+    margin: 0px;
+}
+.bodyContainer {
+    display:flex;
+    height:100vh;
+    font-family: 'Lato', 'FF';
+    transform:translateY(-2px);
+ 
+}
+
+
+  
+.col1 {
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+    color:lightgray;
+    background-color:rgba(31, 40, 51, 0.95);
+    z-index:-1;
+}
+
+
+
+.userProfile {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.userName{
+    margin-bottom: -10px;
+}
+.userProfileImg {
+    margin-top:20px;
+    width:75px;
+    height:75px;
+}
+
+
+
+.userLine {
+    width: 250px;
+    border-color: rgba(31, 40, 51, 0.3);
+}
+
+
+.userOptions, .userOptions2{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filterType {
+    height:50px;
+}
+
+
+.filterSection{
+    display:flex;
+    flex-direction:column;
+    align-content: center;
+    align-items: center;
+    row-gap:20px;
+}
+
+select[name="filterOptions"], select[name="filterType"] {
+    width:175px;
+}
+
+.applyFilterButton {
+    margin-top:20px;
+    font-family:'Lato';
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    color:white;
+    width:115px;
+    height:50px;
+    font-size:18px;
+}
+
+/* COL2 CSS*/
+.col2 {
+    transform:translateX(-0.49px);
+    flex: 0 0 80%;
+    background: linear-gradient(90deg, rgba(31,40,51,0.95) 0%, rgba(31,40,51,0.7763480392156863) 175%);
+    display:flex;
+    flex-direction:column;
+    overflow-y:scroll;
+}
+/*********************/
+
+/* COL2 HEADER CSS */
+.innerHeaderLogo {
+    width:65px;
+    height:65px;
+}
+
+.innerHeader{
+    display:flex;
+    flex-direction: row;
+    flex: 0 0 10%;
+}
+.headerLogos{
+    flex: 0 0 10%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:10px;
+}
+
+.searchBarDiv {
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    flex: 0 0 70%;
+}
+
+
+.extraOptions {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 0 0 20%;
+}
+ 
+.movieCard{
+    position: relative;
+}
+
+
+/* COL2 Movie Display CSS */
+.movieInfo {
+    background-image:url(../images/MadMax2BG.jpg);
+    background-size: 100% 110%;
+    display:flex;
+    flex: 0 0 55%;
+    flex-direction: column-reverse;
+}
+
+.movieDetails {
+    width:70%;
+    background-color:rgba(255, 255, 255, .10);
+    backdrop-filter: blur(35px);
+    color:whitesmoke;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    height:240px;
+    width:806px;
+}
+
+
+.importantMovieDetails {
+    flex: 0 0 70%;
+}
+.infoExtras {
+    display:flex;
+    flex-direction: row;
+    column-gap:20px;
+}
+
+
+
+.infoExtras2 {
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap:25px;
+}
+.infoRating, .infoRatingIMDB {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.labelInfoRating {
+    transform: translateY(-30px);
+}
+
+.infoExtraOptions {
+    display:flex;
+    flex-direction: row-reverse;
+    column-gap: 10px;
+    width:70%;
+}
+
+.infoExtraShowDetails {
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    color:white;
+    display: flex;
+    align-items: center;
+    padding-left:10px;
+    padding-right:10px;
+    flex-direction: row;
+    column-gap: 10px;
+    margin-left:30px;
+    margin-bottom:10px;
+}
+
+.playOption {
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    padding-left:20px;
+    padding-right:20px;
+    display:flex;
+    align-items: center;
+    height:84%;
+}
+
+i.imdb {
+    margin-top:-7px;
+}
+
+.ratingText {
+    font-size:40px;
+}
+
+/* COL2 INNER HEADER #2 CSS */
+.innerHeader2 {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color:lightgray;
+    margin-top:20px;
+    flex: 0 0 10%;
+}
+
+.innerHeader2H2{
+    margin-left:10px;
+}
+
+.sortSection {
+    font-size:18px;
+    display:flex;
+    flex-direction: row;
+    flex:0 0 20%;
+    margin-right:35px;
+}
+
+
+.selectMenu {
+    font-family: 'Lato';
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    color:lightgray;
+    font-weight:bold;
+    font-size:16px;
+}
+
+select > option {
+    color:black;
+}
+
+.filterContainer{
+    color:white;
+    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    font-size:22px;
+    border-radius: 25px;
+    padding: 0px 20px 0px 20px;
+    height:40px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap:10px;
+    transform:translateX(-250px);
+}
+
+
+
+/* COL2 MOVIE SECTION CSS */
+.movieSection {
+    flex: 0 0 35%;
+    display: flex;
+    overflow-x:auto;
+    scroll-behavior: smooth;
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:20px;
+    width: 100%;
+    position: relative;
+    padding-top:30px;
+}
+
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 15px;
+    flex: 0 0 70%;
+    
+}
+.form__field {
+    font-family: inherit;
+    width: 60%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+.form__field::placeholder {
+    color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+}
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+    border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+}
+/* reset input */
+.form__field:required, .form__field:invalid {
+    box-shadow: none;
+}
+
+
+/* CSS */
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-image: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+
+
+/* REFERENCE: CSS BY RADDY https://codepen.io/Raddy/pen/GRjYjKY */
+ .movieItem {
+    position: relative;
+    padding: 0 2px;
+    transition: 250ms all;
+    margin-top:20px;
+}
+.movieItem:hover {
+    margin: 0 40px;
+    transform: scale(1.2);
+}
+.movieItem .heading {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+}
+.movieItem .duration {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    color: #fff;
+}
+
+/* Animation */
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+    }
+    .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+    }
+    .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+    }
+    .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+    }
+    .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+    }
+    @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+    }
+
+/*Logo */
+.logo {
+    text-align: center;
+}
+.infoLogo {
+    width:350px;
+    height:350px;
+    z-index:2;
+    transform:translateY(80px);
+}
+
+.infoTagline{
+    overflow-y:scroll;
+    height:65px;
+    
+}
+
+@media only screen and (max-width: 425px){
+    .bodyContainer{
+        flex-direction:column;
+    }
+}
